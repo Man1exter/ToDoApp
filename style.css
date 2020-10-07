@@ -101,7 +101,7 @@ transition: .3s linear;
 .fa-check{
    position: absolute;
    left: 75%;
-   padding-top: 5px;
+   padding-top: 10px;
    transition: .1s linear;
    color: green;
 }
@@ -109,7 +109,7 @@ transition: .3s linear;
     color: red;
 }
 .edit{
-    padding-left: 15px;
+    padding-left: 20px;
     transition: .1s linear;
     position: absolute;
     left: 80%;
@@ -121,7 +121,7 @@ transition: .3s linear;
 .fa-times{
     position: absolute;
     left: 94%;
-    padding-top: 5px;
+    padding-top: 10px;
     color: yellow;
     transition: .1s linear;
 }

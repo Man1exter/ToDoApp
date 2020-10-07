@@ -100,6 +100,10 @@ transition: .3s linear;
 }
 .fa-check{
    position: absolute;
-   left: 80%;
+   left: 75%;
    padding-top: 5px;
+   transition: .3s linear;
+}
+.fa-check:hover{
+    color: green;
 }

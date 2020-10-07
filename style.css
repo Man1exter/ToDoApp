@@ -66,11 +66,31 @@ body{
     border: 3px solid black;
 }
 .text1{
-    color: rgb(85, 83, 83);
+    color: rgb(129, 126, 126);
     top: 50%;
     left: 50%;
     transform: translate(-50%,-90%);
     font-size: 35px;
     z-index: 5;
     position: absolute;
+}
+.task1{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: gray;
+    width: 90%;
+    height: 10%;
+   font-size: 35px;
+   line-height: 50px;
+   border-radius: 2.5px;
+   cursor: pointer;
+}
+.fa-thumbtack{
+position: absolute;
+left: 0%;
+padding: 7px;
+border-radius: 2.5px;
+background-color: lightblue;
 }

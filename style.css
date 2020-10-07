@@ -39,6 +39,12 @@ body{
     border: 3px solid yellow;
     color: yellow;
     font-size: 45px;
+    transition: .3s linear;
+    text-align: center;
+}
+.todo:hover{
+    background-color: rgb(0, 46, 61);
+    border: 3px solid orange;
 }
 .smain{
     position: absolute;

@@ -36,7 +36,35 @@ body{
     border-radius: 10px;
     cursor: pointer;
     background-color: rgb(0, 0, 0);
-    border: 2px solid yellow;
+    border: 3px solid yellow;
     color: yellow;
+    font-size: 45px;
+}
+.smain{
+    position: absolute;
+    z-index: 4;
+    top: 29%;
+    right: 7%;
     font-size: 40px;
+    background-color: black;
+    color: red;
+    border: 3px solid rgb(251, 255, 0);
+    border-radius: 5px;
+    padding: 8px;
+    cursor: pointer;
+    transition: .3s linear;
+}
+.smain:hover{
+    color: black;
+    background-color: yellow;
+    border: 3px solid black;
+}
+.text1{
+    color: rgb(85, 83, 83);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-90%);
+    font-size: 35px;
+    z-index: 5;
+    position: absolute;
 }

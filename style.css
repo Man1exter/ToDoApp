@@ -118,3 +118,13 @@ transition: .3s linear;
 .edit:hover{
     color: red;
 }
+.fa-times{
+    position: absolute;
+    left: 94%;
+    padding-top: 5px;
+    color: yellow;
+    transition: .1s linear;
+}
+.fa-times:hover{
+    color: red;
+}

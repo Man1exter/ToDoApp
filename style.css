@@ -93,4 +93,11 @@ left: 0%;
 padding: 7px;
 border-radius: 2.5px;
 background-color: lightblue;
+transition: .3s linear;
+}
+.fa-thumbtack:hover{
+    background-color: green;
+}
+.fa-check{
+   position: absolute;
 }

@@ -43,7 +43,7 @@ body{
     margin-top: 20px;
 }
 .todo:hover{
-    background-color: rgb(1, 150, 80);
+    background-color: rgb(4, 221, 120);
     border: 3px solid orange;
 }
 .smain{
@@ -87,7 +87,7 @@ background-color: lightblue;
 transition: .3s linear;
 }
 .fa-thumbtack:hover{
-    background-color: green;
+    background-color: rgb(70, 206, 7);
 }
 .fa-check{
    position: absolute;

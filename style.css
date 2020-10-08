@@ -11,7 +11,7 @@ body{
     border: 5px solid green;
     width: 50%;
     text-align: center;
-    transform: translate(50%, 10%);
+    transform: translate(50%);
     border-radius: 5px;
     background-color: rgb(238, 234, 234);
 }

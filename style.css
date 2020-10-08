@@ -16,7 +16,7 @@ body{
     background-color: rgb(238, 234, 234);
 }
 .header{
-    position: absolute;
+    position: relative;
     top: 12.5%;
     border: 2px solid blue;
     font-size: 80px;
@@ -29,9 +29,8 @@ body{
     border-radius: 5px;
 }
 .todo{
-    top: 30%;
     position: relative;
-    height: 50px;
+    height: 60px;
     width: 60%;
     border-radius: 10px;
     cursor: pointer;
@@ -41,6 +40,7 @@ body{
     font-size: 45px;
     transition: .3s linear;
     text-align: center;
+    margin-top: 17px;
 }
 .todo:hover{
     background-color: rgb(1, 150, 80);

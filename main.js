@@ -24,17 +24,18 @@ const listenerEle = () => {
 };
 const addNewTasks = () => {
 if($inputMain.value !== ''){
-         document.createElement("div .task1");
-         $tasksMain.innerText = $inputMain;
+         $newTasks = document.createElement("div");
+         $tasksMain.innerText = $inputMain.value;
+         $tasksMain.appendChild($newTasks);
          $inputMain = '';
 } else {
 $alert.innerText = "Write task / tasks"
 $alert.style.color = "red";
-}
+  }
 };
 
 
 const eventsMain = () => {
-$addMain.addEventListener("click",)
+$addMain.addEventListener("click",addNewTasks)
 }
 document.addEventListener("DOMContentLoaded", mainFct);

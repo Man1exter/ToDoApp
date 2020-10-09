@@ -117,3 +117,6 @@ transition: .3s linear;
 .fa-times:hover{
     color: red;
 }
+li{
+    list-style-type: none;
+}

@@ -24,12 +24,14 @@ const listenerEle = () => {
 };
 const addNewTasks = () => {
 if($inputMain.value !== ''){
-         $newTasks = document.createElement("div");
-         $tasksMain.innerText = $inputMain.value;
+         $newTasks = document.createElement("li");
+         $newTasks.innerText = $inputMain.value;
          $tasksMain.appendChild($newTasks);
-         $inputMain = '';
+
+         $inputMain.value = '';
+         $alert.innerText = '';
 } else {
-$alert.innerText = "Write task / tasks"
+$alert.innerText = "Write task / tasks!"
 $alert.style.color = "red";
   }
 };

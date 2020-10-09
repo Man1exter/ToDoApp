@@ -12,7 +12,10 @@ listenerEle();
 };
 
 const downloadEle = () => {
-
+const $inputMain = document.querySelector(".todo");
+const $alert = document.querySelector(".------------------");
+const $addMain = document.querySelector(".smain");
+const $tasksMain = document.querySelector(".task1");
 };
 
 const listenerEle = () => {

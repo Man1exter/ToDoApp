@@ -44,9 +44,9 @@ body{
 }
 .todo:hover{
     background-color: rgb(4, 221, 120);
-    border: 3px solid orange;
+    border: 3px solid rgb(0, 0, 0);
 }
-.smain{
+.sMain{
     position: relative;
     font-size: 40px;
     background-color: black;
@@ -59,7 +59,7 @@ body{
     transition: .3s linear;
     margin-left: 20px;
 }
-.smain:hover{
+.sMain:hover{
     color: black;
     background-color: yellow;
     border: 3px solid black;

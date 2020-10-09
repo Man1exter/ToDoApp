@@ -14,32 +14,33 @@ listenerEle();
 
 const downloadEle = () => {
      $inputMain = document.querySelector(".todo");
-      $alert = document.querySelector(".tex1");
-       $addMain = document.querySelector(".smain");
+      $alert = document.querySelector(".text1");
+       $addMain = document.querySelector(".sMain");
         $tasksMainUL = document.querySelector("ul");
 };
 
 const listenerEle = () => {
 
 };
-const addNewTasks = () => {
-if($inputMain.value !== ''){
-         $newTasks = document.createElement("li");
-         $newTasks.innerText = $inputMain.value;
-         $tasksMainUL.appendChild($newTasks);
-
-         $inputMain.value = '';
-         $alert.innerText = '';
-} else {
-$alert.innerText = "Write task / tasks!"
-$alert.style.color = "red";
-  }
-};
 
 
 const eventsMain = () => {
-$addMain.addEventListener("click",addNewTasks)
+$addMain.addEventListener("click", addNewTasks)
 }
+
+const addNewTasks = () => {
+        if($inputMain.value !== ''){
+                 $newTasks = document.createElement("li");
+                 $newTasks.innerText = $inputMain.value;
+                 $tasksMainUL.appendChild($newTasks);
+        
+                 $inputMain.value = '';
+                 $alert.innerText = '';
+        } else {
+        $alert.innerText = "Write task.. / tasks.. !"
+        $alert.style.color = "red";
+          }
+        };
 
 
 document.addEventListener("DOMContentLoaded", mainFct);

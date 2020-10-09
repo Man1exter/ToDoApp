@@ -12,10 +12,10 @@ listenerEle();
 };
 
 const downloadEle = () => {
-const $inputMain = document.querySelector(".todo");
-const $alert = document.querySelector(".------------------");
-const $addMain = document.querySelector(".smain");
-const $tasksMain = document.querySelector(".task1");
+     $inputMain = document.querySelector(".todo");
+      $alert = document.querySelector(".------------------");
+       $addMain = document.querySelector(".smain");
+        $tasksMain = document.querySelector(".task1");
 };
 
 const listenerEle = () => {

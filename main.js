@@ -20,13 +20,8 @@ const downloadEle = () => {
 };
 
 const listenerEle = () => {
-
+        $addMain.addEventListener("click", addNewTasks)
 };
-
-
-const eventsMain = () => {
-$addMain.addEventListener("click", addNewTasks)
-}
 
 const addNewTasks = () => {
         if($inputMain.value !== ''){

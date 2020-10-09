@@ -22,7 +22,13 @@ const listenerEle = () => {
 
 };
 const addNewTasks = () => {
+if($inputMain.value !== ''){
+         document.createElement("div .task1");
+         $tasksMain.innerText = $inputMain;
+         $inputMain = '';
+} else {
 
+}
 };
 
 

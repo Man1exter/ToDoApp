@@ -16,7 +16,7 @@ const downloadEle = () => {
      $inputMain = document.querySelector(".todo");
       $alert = document.querySelector(".tex1");
        $addMain = document.querySelector(".smain");
-        $tasksMain = document.querySelector(".task1");
+        $tasksMain = document.querySelector("ul");
 };
 
 const listenerEle = () => {
@@ -40,4 +40,6 @@ $alert.style.color = "red";
 const eventsMain = () => {
 $addMain.addEventListener("click",addNewTasks)
 }
+
+
 document.addEventListener("DOMContentLoaded", mainFct);

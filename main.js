@@ -34,6 +34,7 @@ const addNewTasks = () => {
         } else {
         $alert.innerText = "Write task.. / tasks.. !"
         $alert.style.color = "red";
+        $alert.style.textTransform = "uppercase"
           }
         };
 

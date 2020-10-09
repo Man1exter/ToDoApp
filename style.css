@@ -26,6 +26,7 @@ body{
     line-height: 130px;
     background: linear-gradient(to left, rgb(1, 55, 73),rgb(0, 204, 255));
     border-radius: 5px;
+    color: rgb(255, 0, 157);
 }
 .todo{
     position: relative;
@@ -74,15 +75,15 @@ body{
    line-height: 50px;
    border-radius: 2.5px;
    cursor: pointer;
+   text-align: left;
 }
 .fa-thumbtack{
-position: absolute;
-left: 0%;
-padding: 7px;
-padding-top: 11px ;
+padding: 10px;
 border-radius: 2.5px;
 background-color: lightblue;
 transition: .3s linear;
+height: 100%;
+margin-left: 0%;
 }
 .fa-thumbtack:hover{
     background-color: rgb(70, 206, 7);
@@ -119,4 +120,7 @@ transition: .3s linear;
 }
 li{
     list-style-type: none;
+}
+ul{
+    border: 3px solid black;
 }

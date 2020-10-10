@@ -25,6 +25,7 @@ const listenerEle = () => {
 const addNewTasks = () => {
         if($inputMain.value !== ''){
                  $newTasks = document.createElement("li");
+                 $newTasks.style.display = "flex"
                  $newTasks.innerText = $inputMain.value;
                  $tasksMainUL.appendChild($newTasks);
         
@@ -44,20 +45,20 @@ toolsPanel.classList.add("tools");
 $newTasks.appendChild(toolsPanel);
 
 const completeButton = document.createElement('i');
-completeButton.classList.add("fas fa-thumbtack");
-completeButton.innerText = '<i class="fas fa-thumbtack"></i>';
+completeButton.classList.add(".fa-thumbtack");
+completeButton.innerHTML = '<i class="fas fa-thumbtack"></i>';
 
  const editButton = document.createElement('i');
-editButton.classList.add("fas fa-times");
-editButton.innerText = '<i class="fas fa-check"></i>';
+editButton.classList.add(".fa-times");
+editButton.innerHTML = '<i class="fas fa-check"></i>';
 
  const deleteButton = document.createElement('span');
 deleteButton.classList.add("edit");
 deleteButton.innerText = 'EDIT';
 
  const closeButton = document.createElement("i");
-closeButton.classList.add("fas fa-check");
-close.innerText = '<i class="fas fa-times"></i>';
+closeButton.classList.add(".fa-check");
+closeButton.innerHTML = '<i class="fas fa-times"></i>';
 
 toolsPanel.appendChild(completeButton);
 toolsPanel.appendChild(editButton);

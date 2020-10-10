@@ -38,5 +38,9 @@ const addNewTasks = () => {
           }
         };
 
+const createToolsEle = () => {
+
+};
+
 
 document.addEventListener("DOMContentLoaded", mainFct);

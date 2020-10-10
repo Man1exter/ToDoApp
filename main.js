@@ -39,23 +39,23 @@ const addNewTasks = () => {
         };
 
 const createToolsEle = () => {
-toolsPanel = document.createElement('div');
+const toolsPanel = document.createElement('div');
 toolsPanel.classList.add("tools");
-$newTasks.appendChild(toolsPanel)
+$newTasks.appendChild(toolsPanel);
 
-completeButton = document.createElement('i');
+const completeButton = document.createElement('i');
 completeButton.classList.add("fas fa-thumbtack");
 completeButton.innerText = '<i class="fas fa-thumbtack"></i>';
 
-editButton = document.createElement('i');
+ const editButton = document.createElement('i');
 editButton.classList.add("fas fa-times");
 editButton.innerText = '<i class="fas fa-check"></i>';
 
-deleteButton = document.createElement('span');
+ const deleteButton = document.createElement('span');
 deleteButton.classList.add("edit");
 deleteButton.innerText = 'EDIT';
 
-closeButton = document.createElement("i");
+ const closeButton = document.createElement("i");
 closeButton.classList.add("fas fa-check");
 close.innerText = '<i class="fas fa-times"></i>';
 

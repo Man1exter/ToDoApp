@@ -47,6 +47,8 @@ $toolsPanel = document.createElement(div.tools);
 $completeButton = document.createElement(button.complete);
 $editButton = document.createElement(button.edit);
 $deleteButton = document.createElement(button.delete);
+
+$newTasks.appendChild($toolsPanel)
 };
 
 

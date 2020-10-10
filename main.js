@@ -30,6 +30,7 @@ const addNewTasks = () => {
         
                  $inputMain.value = '';
                  $alert.innerText = '';
+                 createToolsEle();
         } else {
         $alert.innerText = "Write task.. / tasks.. !"
         $alert.style.color = "red";
@@ -43,10 +44,17 @@ toolsPanel.classList.add("tools");
 $newTasks.appendChild(toolsPanel)
 
 completeButton = document.createElement('i');
+completeButton.classList.add("fa-thumbtack");
 
-$editButton = document.createElement('i');
+editButton = document.createElement('i');
+editButton.classList.add("fa-times");
 
-$deleteButton = document.createElement('i');
+deleteButton = document.createElement('span');
+deleteButton.classList.add("edit");
+
+toolsPanel.appendChild(completeButton);
+toolsPanel.appendChild(editButton);
+toolsPanel.appendChild(deleteButton);
 
 
 };

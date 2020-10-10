@@ -42,6 +42,7 @@ const addNewTasks = () => {
 const createToolsEle = () => {
 const toolsPanel = document.createElement('div');
 toolsPanel.classList.add("tools");
+toolsPanel.style.marginLeft = 0 + "px"
 $newTasks.appendChild(toolsPanel);
 
 const completeButton = document.createElement('i');

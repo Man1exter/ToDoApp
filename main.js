@@ -38,15 +38,17 @@ const addNewTasks = () => {
         };
 
 const createToolsEle = () => {
-$toolsPanel = document.createElement(div);
+toolsPanel = document.createElement('div');
+toolsPanel.classList.add("tools");
+$newTasks.appendChild(toolsPanel)
 
-$completeButton = document.createElement(button);
+completeButton = document.createElement('i');
 
-$editButton = document.createElement(button);
+$editButton = document.createElement('i');
 
-$deleteButton = document.createElement(button);
+$deleteButton = document.createElement('i');
 
-$newTasks.appendChild($toolsPanel)
+
 };
 
 

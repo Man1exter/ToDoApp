@@ -44,17 +44,25 @@ toolsPanel.classList.add("tools");
 $newTasks.appendChild(toolsPanel)
 
 completeButton = document.createElement('i');
-completeButton.classList.add("fa-thumbtack");
+completeButton.classList.add("fas fa-thumbtack");
+completeButton.innerText = '<i class="fas fa-thumbtack"></i>';
 
 editButton = document.createElement('i');
-editButton.classList.add("fa-times");
+editButton.classList.add("fas fa-times");
+editButton.innerText = '<i class="fas fa-check"></i>';
 
 deleteButton = document.createElement('span');
 deleteButton.classList.add("edit");
+deleteButton.innerText = 'EDIT';
+
+closeButton = document.createElement("i");
+closeButton.classList.add("fas fa-check");
+close.innerText = '<i class="fas fa-times"></i>';
 
 toolsPanel.appendChild(completeButton);
 toolsPanel.appendChild(editButton);
 toolsPanel.appendChild(deleteButton);
+toolsPanel.appendChild(closeButton);
 
 
 };

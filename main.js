@@ -5,6 +5,10 @@ let $addMain; // main button to add tasks below
 let $tasksMainUL; //tasks below input and button
 let $newTasks; // NEW ADD ELEMENT TASKS
 
+let $toolsPanel;
+let $completeButton;
+let $editButton;
+let $deleteButton;
 
 
 const mainFct = () => {
@@ -39,7 +43,10 @@ const addNewTasks = () => {
         };
 
 const createToolsEle = () => {
-
+$toolsPanel = document.createElement(div.tools);
+$completeButton = document.createElement(button.complete);
+$editButton = document.createElement(button.edit);
+$deleteButton = document.createElement(button.delete);
 };
 
 

@@ -124,3 +124,6 @@ margin-left: 0%;
 .tools{
     margin-left: 10px;
 }
+ul{
+    overflow: hidden;
+}

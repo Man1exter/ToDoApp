@@ -27,6 +27,7 @@ const addNewTasks = () => {
                  $newTasks = document.createElement("li");
                  $newTasks.style.display ="flex";
                  $newTasks.style.marginLeft = 0 + "px";
+                 $newTasks.style.paddingLeft = 59 + "px"
                 
                  $newTasks.innerText = $inputMain.value;
                  $tasksMainUL.appendChild($newTasks);
@@ -44,7 +45,6 @@ const addNewTasks = () => {
 const createToolsEle = () => {
 const toolsPanel = document.createElement('div');
 toolsPanel.classList.add(".tools");
-toolsPanel.style.left = 10 + "%"
 $newTasks.appendChild(toolsPanel);
 
 const completeButton = document.createElement('i');

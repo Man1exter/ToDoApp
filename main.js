@@ -25,6 +25,7 @@ const listenerEle = () => {
 const addNewTasks = () => {
         if($inputMain.value !== ''){
                  $newTasks = document.createElement("li");
+                 $newTasks.style.display ="flex";
                 
                  $newTasks.innerText = $inputMain.value;
                  $tasksMainUL.appendChild($newTasks);
@@ -42,12 +43,13 @@ const addNewTasks = () => {
 const createToolsEle = () => {
 const toolsPanel = document.createElement('div');
 toolsPanel.classList.add(".tools");
-toolsPanel.style.display = "inline-block";
 $newTasks.appendChild(toolsPanel);
 
 const completeButton = document.createElement('i');
 completeButton.classList.add(".fa-thumbtack");
 completeButton.innerHTML = '<i class="fas fa-thumbtack"></i>';
+completeButton.style.position = "absolute";
+completeButton.style.left = 11 + "px";
 
 
  const editButton = document.createElement('i');

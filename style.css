@@ -121,4 +121,6 @@ margin-left: 0%;
 .fa-times:hover{
     color: red;
 }
-
+.tools{
+    margin-left: 10px;
+}

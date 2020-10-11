@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 body{
     height: 100vh;
@@ -13,7 +14,7 @@ body{
     text-align: center;
     transform: translate(50%);
     border-radius: 5px;
-    background-color: rgb(255, 123, 0);
+    background: linear-gradient(to left bottom, blue,violet);
 }
 .header{
     position: relative;
@@ -69,7 +70,7 @@ body{
     font-size: 35px;
 }
 li{
-    background-color: gray;
+    background: linear-gradient(to bottom right,blue,rgb(238, 255, 0));
     width: 100%;
    font-size: 30px;
    line-height: 50px;
@@ -77,6 +78,7 @@ li{
    cursor: pointer;
    text-align: left;
    list-style-type: none;
+   border: 1px solid black;
 }
 .fa-thumbtack{
 padding: 10px;

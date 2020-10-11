@@ -25,7 +25,7 @@ const listenerEle = () => {
 const addNewTasks = () => {
         if($inputMain.value !== ''){
                  $newTasks = document.createElement("li");
-                 $newTasks.style.display = "flex"
+                 $newTasks.style.display = "flex";
                  $newTasks.innerText = $inputMain.value;
                  $tasksMainUL.appendChild($newTasks);
         

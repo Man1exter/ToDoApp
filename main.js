@@ -26,6 +26,8 @@ const addNewTasks = () => {
         if($inputMain.value !== ''){
                  $newTasks = document.createElement("li");
                  $newTasks.style.display = "flex";
+                 $newTasks.style.justifyContent = "left";
+                
                  $newTasks.innerText = $inputMain.value;
                  $tasksMainUL.appendChild($newTasks);
         
@@ -48,6 +50,7 @@ $newTasks.appendChild(toolsPanel);
 const completeButton = document.createElement('i');
 completeButton.classList.add(".fa-thumbtack");
 completeButton.innerHTML = '<i class="fas fa-thumbtack"></i>';
+
 
  const editButton = document.createElement('i');
 editButton.classList.add(".fa-times");

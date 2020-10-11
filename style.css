@@ -25,7 +25,7 @@ body{
     width: 100%;
     height: 25%;
     line-height: 130px;
-    background: linear-gradient(to left, rgb(1, 55, 73),rgb(0, 204, 255));
+    background: linear-gradient(to left, rgb(5, 138, 182),rgb(0, 204, 255));
     border-radius: 5px;
     color: rgb(255, 0, 157);
 }
@@ -122,6 +122,3 @@ margin-left: 0%;
     color: red;
 }
 
-ul{
-    border: 3px solid black;
-}

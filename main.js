@@ -26,7 +26,6 @@ const addNewTasks = () => {
         if($inputMain.value !== ''){
                  $newTasks = document.createElement("li");
                 
-                
                  $newTasks.innerText = $inputMain.value;
                  $tasksMainUL.appendChild($newTasks);
         
@@ -42,8 +41,8 @@ const addNewTasks = () => {
 
 const createToolsEle = () => {
 const toolsPanel = document.createElement('div');
-toolsPanel.classList.add("tools");
-toolsPanel.style.marginLeft = 0 + "px";
+toolsPanel.classList.add(".tools");
+toolsPanel.style.display = "inline-block";
 $newTasks.appendChild(toolsPanel);
 
 const completeButton = document.createElement('i');

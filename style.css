@@ -70,7 +70,7 @@ body{
     font-size: 35px;
 }
 li{
-    background: linear-gradient(to bottom right,blue,rgb(238, 255, 0));
+    background: linear-gradient(to bottom right,rgb(0, 60, 255),rgb(238, 255, 0),green);
     width: 100%;
    font-size: 30px;
    line-height: 50px;
@@ -115,7 +115,7 @@ margin-left: 0%;
     position: absolute;
     left: 94%;
     padding-top: 10px;
-    color: yellow;
+    color: rgb(255, 72, 0);
     transition: .1s linear;
 }
 .fa-times:hover{

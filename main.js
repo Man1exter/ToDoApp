@@ -75,6 +75,7 @@ toolsPanel.appendChild(closeButton);
 
 };
 const changesLi = (e) => {
+
 if(e.target.closest("i").classList.contains("fa-thumbtack")){
 e.target.closest("i").classList.toggle("sprinter");
         
@@ -85,11 +86,9 @@ else if (e.target.closest("i").className === 'fas fa-times') {
 else if (e.target.closest("i").className === 'fas fa-check') {
         e.target.closest("i").classList.toggle("sprinter3");
 }
-else if (e.target.closest("i").className === 'edit'){
-        e.target.closest("i").classList.toggle("sprinter4");
+else if (e.target.closest("span")){
+        e.target.closest("span").classList.add("sprinter4");
 }
-
-
 };
 
 document.addEventListener("DOMContentLoaded", mainFct);

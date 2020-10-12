@@ -20,6 +20,7 @@ const downloadEle = () => {
 
 const listenerEle = () => {
         $addMain.addEventListener("click", addNewTasks);
+        $tasksMainUL.addEventListener("click",changesLi);
 };
 
 
@@ -71,6 +72,9 @@ toolsPanel.appendChild(completeButton);
 toolsPanel.appendChild(editButton);
 toolsPanel.appendChild(deleteButton);
 toolsPanel.appendChild(closeButton);
+
+};
+const changesLi = () => {
 
 };
 

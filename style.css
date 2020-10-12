@@ -75,7 +75,7 @@ li{
    font-size: 30px;
    line-height: 50px;
    border-radius: 2.5px;
-   cursor: pointer;
+   /* cursor: pointer; */
    text-align: left;
    list-style-type: none;
    border: 1px solid black;
@@ -87,6 +87,7 @@ background-color: lightblue;
 transition: .3s linear;
 height: 62%;
 margin-left: 0%;
+cursor: pointer;
 }
 .fa-thumbtack:hover{
     background-color: rgb(21, 255, 0);
@@ -97,6 +98,7 @@ margin-left: 0%;
    padding-top: 10px;
    transition: .1s linear;
    color: green;
+   cursor: pointer;
 }
 .fa-check:hover{
     color: red;
@@ -107,6 +109,7 @@ margin-left: 0%;
     position: absolute;
     left: 80%;
     color: blue;
+    cursor: pointer;
 }
 .edit:hover{
     color: red;
@@ -117,6 +120,7 @@ margin-left: 0%;
     padding-top: 11px;
     color: rgb(255, 72, 0);
     transition: .1s linear;
+    cursor: pointer;
 }
 .fa-times:hover{
     color: red;

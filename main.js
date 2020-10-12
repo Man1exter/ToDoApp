@@ -20,12 +20,8 @@ const downloadEle = () => {
 
 const listenerEle = () => {
         $addMain.addEventListener("click", addNewTasks);
-        completeButton.addEventListener("click",changeColor);
 };
 
-const changeColor = () => {
-        completeButton.style.backgroundColor = "red";
-}
 
 const addNewTasks = () => {
         if($inputMain.value !== ''){
@@ -76,8 +72,6 @@ toolsPanel.appendChild(editButton);
 toolsPanel.appendChild(deleteButton);
 toolsPanel.appendChild(closeButton);
 
-
 };
-
 
 document.addEventListener("DOMContentLoaded", mainFct);

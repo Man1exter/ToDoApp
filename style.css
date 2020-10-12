@@ -27,7 +27,7 @@ body{
     line-height: 130px;
     background: linear-gradient(to left, rgb(5, 138, 182),rgb(0, 204, 255));
     border-radius: 5px;
-    color: rgb(255, 0, 157);
+    color: rgb(255, 238, 0);
 }
 .todo{
     position: relative;
@@ -66,7 +66,7 @@ body{
     border: 3px solid black;
 }
 .text1{
-    color: rgb(129, 126, 126);
+    color: rgb(221, 220, 220);
     font-size: 35px;
 }
 li{

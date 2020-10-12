@@ -74,7 +74,21 @@ toolsPanel.appendChild(deleteButton);
 toolsPanel.appendChild(closeButton);
 
 };
-const changesLi = () => {
+const changesLi = (e) => {
+if(e.target.closest("i").classList.contains("fa-thumbtack")){
+e.target.closest("i").classList.toggle("sprinter");
+        
+} 
+else if (e.target.closest("i").className === 'fas fa-times') {
+        e.target.closest("i").classList.toggle("sprinter2");
+} 
+else if (e.target.closest("i").className === 'fas fa-check') {
+        e.target.closest("i").classList.toggle("sprinter3");
+}
+else if (e.target.closest("i").className === 'edit'){
+        e.target.closest("i").classList.toggle("sprinter4");
+}
+
 
 };
 

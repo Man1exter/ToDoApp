@@ -19,8 +19,13 @@ const downloadEle = () => {
 };
 
 const listenerEle = () => {
-        $addMain.addEventListener("click", addNewTasks)
+        $addMain.addEventListener("click", addNewTasks);
+        completeButton.addEventListener("click",changeColor);
 };
+
+const changeColor = () => {
+        completeButton.style.backgroundColor = "red";
+}
 
 const addNewTasks = () => {
         if($inputMain.value !== ''){

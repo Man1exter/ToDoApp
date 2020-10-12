@@ -113,8 +113,8 @@ margin-left: 0%;
 }
 .fa-times{
     position: absolute;
-    left: 94%;
-    padding-top: 10px;
+    left: 92%;
+    padding-top: 11px;
     color: rgb(255, 72, 0);
     transition: .1s linear;
 }

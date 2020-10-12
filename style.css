@@ -144,4 +144,8 @@ color: red;
         color: red;
         }
         
-    
+.vice{
+    text-decoration: line-through;
+    color: gray;
+}
+   

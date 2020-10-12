@@ -85,10 +85,8 @@ else if (e.target.closest("i").className === 'fas fa-times') {
 } 
 else if (e.target.closest("i").className === 'fas fa-check') {
         e.target.closest("i").classList.toggle("sprinter3");
-}
-else if (e.target.closest("span")){
-        e.target.closest("span").classList.add("sprinter4");
-}
+        e.target.closest("li").classList.toggle("vice");}
+
 };
 
 document.addEventListener("DOMContentLoaded", mainFct);

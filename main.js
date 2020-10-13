@@ -5,6 +5,12 @@ let $addMain; // main button to add tasks below
 let $tasksMainUL; //tasks below input and button
 let $newTasks; // NEW ADD ELEMENT TASKS
 
+let $popup;
+let $infoPopup;
+let $editPopup;
+let $inputPopup;
+let $buttonAddPopup;
+let $closePopup;
 
 const mainFct = () => {
 downloadEle();

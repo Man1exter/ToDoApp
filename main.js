@@ -22,6 +22,10 @@ const downloadEle = () => {
       $alert = document.querySelector(".text1");
        $addMain = document.querySelector(".sMain");
         $tasksMainUL = document.querySelector("ul");
+
+        $closePopup = document.querySelector(".fa-times-circle");
+        $buttonAddPopup = document.querySelector(".save");
+        $infoPopup = document.querySelector(".popin");
 };
 
 const listenerEle = () => {

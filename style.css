@@ -15,6 +15,7 @@ body{
     transform: translate(50%);
     border-radius: 5px;
     background: linear-gradient(to left bottom, blue,violet);
+    box-shadow: 30px 10px 30px 10px rgba(0,0,0,0.75);
 }
 .header{
     position: relative;

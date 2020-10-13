@@ -10,6 +10,7 @@ let $editPopup; // edit popup
 let $inputPopup; // input popup
 let $buttonAddPopup; // button to add popup like a accept 
 let $closePopup; // close popup
+let $editBtn; // close popup
 
 const mainFct = () => {
 downloadEle();
@@ -26,12 +27,14 @@ const downloadEle = () => {
         $buttonAddPopup = document.querySelector(".save");
         $infoPopup = document.querySelector(".popin");
         $popup = document.querySelector(".popup");
+        $editBtn = document.querySelector(".edit");
 };
 
 const listenerEle = () => {
         $addMain.addEventListener("click", addNewTasks);
         $tasksMainUL.addEventListener("click",changesLi);
         $closePopup.addEventListener("click",minimal);
+        $editBtn.addEventListener("click",openPopup);
 };
 
 
@@ -103,6 +106,10 @@ else if (e.target.closest("i").className === 'fas fa-check') {
 const minimal = () => {
 $closePopup.style.display = "none";
 $popup.style.display = "none";
+};
+
+const openPopup = () => {
+
 };
 
 document.addEventListener("DOMContentLoaded", mainFct);

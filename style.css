@@ -155,7 +155,7 @@ color: red;
        height: 300px;
        top: 225%;
        border-radius: 10px;
-       background-color: rgb(0, 204, 255);
+       background-color: rgb(195, 131, 255);
    }
    .popupex{
        background-color: red;
@@ -172,10 +172,15 @@ color: red;
    }
    .popin{
        border: 3px solid blue;
-       background-color: lightblue;
+       background-color: rgb(151, 245, 248);
        width: 450px;
        height: 50px;
        border-radius: 10px;
        font-size: 50px;
        margin-top: 80px;
+   }
+   .save{
+       font-size: 50px;
+       margin-left: 40px;
+       cursor: pointer;
    }

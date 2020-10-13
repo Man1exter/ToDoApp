@@ -158,6 +158,7 @@ color: red;
        border-radius: 10px;
        background: linear-gradient(to left , blue,green);
        box-shadow: 13px 15px 30px 17px rgba(0,0,0,0.75);
+       display: none;
    }
    .popupex{
        background-color: red;
@@ -202,3 +203,6 @@ color: red;
        font-size: 70px;
        cursor: pointer;
    }
+.opener{
+    display: block;
+}

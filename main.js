@@ -32,9 +32,9 @@ const downloadEle = () => {
 
 const listenerEle = () => {
         $addMain.addEventListener("click", addNewTasks);
-        $tasksMainUL.addEventListener("click",changesLi);
-        $closePopup.addEventListener("click",minimal);
-        $editBtn.addEventListener("click",openPopup);
+        $tasksMainUL.addEventListener("click", changesLi);
+        $closePopup.addEventListener("click", minimal);
+        $editBtn.addEventListener("click", openPopup);
 };
 
 
@@ -109,7 +109,7 @@ $popup.style.display = "none";
 };
 
 const openPopup = () => {
-
+$popup.style.display = "block";
 };
 
 document.addEventListener("DOMContentLoaded", mainFct);

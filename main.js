@@ -31,6 +31,7 @@ const downloadEle = () => {
 const listenerEle = () => {
         $addMain.addEventListener("click", addNewTasks);
         $tasksMainUL.addEventListener("click",changesLi);
+        $closePopup.addEventListener("click",minimal);
 };
 
 
@@ -97,6 +98,11 @@ else if (e.target.closest("i").className === 'fas fa-check') {
         e.target.closest("i").classList.toggle("sprinter3");
         e.target.closest("li").classList.toggle("vice");}
 
+};
+
+const minimal = () => {
+$closePopup.style.display = "none";
+$popup.style.display = "none";
 };
 
 document.addEventListener("DOMContentLoaded", mainFct);

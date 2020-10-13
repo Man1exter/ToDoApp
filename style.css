@@ -195,8 +195,8 @@ color: red;
    }
    .fa-times-circle{
        position: absolute;
-       right: -4%;
-       top: -15%;
+       right: -3.5%;
+       top: -12%;
        font-size: 70px;
        cursor: pointer;
    }

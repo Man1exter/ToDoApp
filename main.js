@@ -104,7 +104,7 @@ else if (e.target.closest("i").className === 'fas fa-check') {
 };
 
 const minimal = () => {
-$popup.style.display = "none";
+$popup.style.left = -160 + "%";
 };
 
 const openPopup = () => {

@@ -75,8 +75,8 @@ completeButton.style.left = 11 + "px";
 editButton.classList.add(".fa-times");
 editButton.innerHTML = '<i class="fas fa-check"></i>';
 
- const deleteButton = document.createElement('span');
-deleteButton.classList.add("edit");
+ const deleteButton = document.createElement('button');
+deleteButton.classList.add("new");
 deleteButton.innerText = 'EDIT';
 
  const closeButton = document.createElement("i");
@@ -102,14 +102,14 @@ else if (e.target.closest("i").className === 'fas fa-check') {
         e.target.closest("i").classList.toggle("sprinter3");
         e.target.closest("li").classList.toggle("vice");
 }
-else if (e.target.closest("span").className === 'edit'){
+else if (e.target.closest("button").className === '.new'){
         openPopupTask();
 }
 
 };
-const openPopupTask = () => {
-
-};
+const openPopupTask = () =>{
+$popup.style.left = 0 + "%";
+}
 
 const minimal = () => {
 $popup.style.left = -200 + "%";

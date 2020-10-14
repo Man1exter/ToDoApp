@@ -211,3 +211,15 @@ color: red;
 .closer{
     display: none;
 }
+.new{
+    transition: .1s linear;
+    position: absolute;
+    left: 80%;
+    color: blue;
+    cursor: pointer;
+    font-size: 35px;
+    margin-left: 16px;
+    margin-top: 5px;
+    border: none;
+    background: rgba(0,0,0,0.0);
+}

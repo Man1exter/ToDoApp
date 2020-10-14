@@ -103,9 +103,12 @@ else if (e.target.closest("i").className === 'fas fa-check') {
         e.target.closest("li").classList.toggle("vice");
 }
 else if(e.target.closest("span").className === 'edit'){
-        movePop();
+        movePope();
 }
+};
 
+const movePope = () => {
+$popup.style.left = 0 + "%";
 };
 
 const minimal = () => {

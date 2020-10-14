@@ -12,6 +12,7 @@ let $buttonAddPopup; // button to add popup like a accept
 let $closePopup; // close popup
 let $editBtn; // open popup in tasks
 
+
 const mainFct = () => {
           downloadEle();
           listenerEle();
@@ -99,9 +100,16 @@ else if (e.target.closest("i").className === 'fas fa-times') {
 } 
 else if (e.target.closest("i").className === 'fas fa-check') {
         e.target.closest("i").classList.toggle("sprinter3");
-        e.target.closest("li").classList.toggle("vice");}
+        e.target.closest("li").classList.toggle("vice");
+}
+else if(e.target.closest("span").className === 'edit'){
+        movePop();
+}
 
 };
+const movePop = () => {
+$popup.style.left = 0 + "%";
+}
 
 const minimal = () => {
 $popup.style.left = -160 + "%";
@@ -109,6 +117,6 @@ $popup.style.left = -160 + "%";
 
 const openPopup = () => {
  $popup.style.left = 0 + "%";
-};
+ };
 
 document.addEventListener("DOMContentLoaded", mainFct);

@@ -117,6 +117,6 @@ $popup.style.left = -200 + "%";
 
 const openPopup = () => {
 $popup.style.left = 0 + "%";
- };
+};
 
 document.addEventListener("DOMContentLoaded", mainFct);

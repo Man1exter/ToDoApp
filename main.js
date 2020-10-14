@@ -91,7 +91,7 @@ toolsPanel.appendChild(closeButton);
 };
 const changesLi = (e) => {
 
-if(e.target.closest("i").className === "fa-thumbtack"){
+if(e.target.closest("i").classList.contains("fa-thumbtack")){
 e.target.closest("i").classList.toggle("sprinter");
         
 } 
@@ -107,12 +107,9 @@ else if(e.target.closest("span").className === 'edit'){
 }
 
 };
-const movePop = () => {
-$popup.style.left = 0 + "%";
-}
 
 const minimal = () => {
-$popup.style.left = -160 + "%";
+$popup.style.left = -200 + "%";
 };
 
 const openPopup = () => {

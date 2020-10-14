@@ -206,3 +206,6 @@ color: red;
 .opener{
     display: block;
 }
+.closer{
+    display: none;
+}

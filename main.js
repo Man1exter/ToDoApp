@@ -108,7 +108,7 @@ $popup.style.display = "none";
 };
 
 const openPopup = () => {
- $popup.style.display = "none";
+ $popup.classList.add(".opener");
 };
 
 document.addEventListener("DOMContentLoaded", mainFct);

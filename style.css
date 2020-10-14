@@ -227,3 +227,6 @@ color: red;
 .new:hover{
     color: red;
 }
+.show{
+    left: 0%;
+}

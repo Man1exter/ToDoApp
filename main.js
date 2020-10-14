@@ -94,22 +94,17 @@ const changesLi = (e) => {
 if (e.target.closest("i").classList.contains("fa-thumbtack")){
 e.target.closest("i").classList.toggle("sprinter");
         
-} 
-else if (e.target.closest("i").className === 'fas fa-times') {
+}else if (e.target.closest("i").className === 'fas fa-times') {
         e.target.closest("i").classList.toggle("sprinter2");
-} 
-else if (e.target.closest("i").className === 'fas fa-check') {
+
+}else if (e.target.closest("i").className === 'fas fa-check') {
         e.target.closest("i").classList.toggle("sprinter3");
         e.target.closest("li").classList.toggle("vice");
-}
-else if (e.target.closest("button").className === '.new'){
-        openPopupTask();
-}
 
+}else if (e.target.closest("button").classList.contains('new'))
+        $popup.classList.add("show");
 };
-const openPopupTask = () =>{
-$popup.style.left = 0 + "%";
-}
+
 
 const minimal = () => {
 $popup.style.left = -200 + "%";
@@ -119,4 +114,4 @@ const openPopup = () => {
 $popup.style.left = 0 + "%";
 };
 
-document.addEventListener("DOMContentLoaded", mainFct);
+document.addEventListener("DOMContentLoaded", mainFct)

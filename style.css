@@ -155,10 +155,12 @@ color: red;
        width: 955px;
        height: 300px;
        top: 180%;
+       left: -160%;
        border-radius: 10px;
        background: linear-gradient(to left , blue,green);
        box-shadow: 13px 15px 30px 17px rgba(0,0,0,0.75);
        display: block;
+       transition: .2s linear;
    }
    .popupex{
        background-color: red;

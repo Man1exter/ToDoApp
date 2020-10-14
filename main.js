@@ -91,17 +91,20 @@ toolsPanel.appendChild(closeButton);
 };
 const changesLi = (e) => {
 
-if (e.target.closest("span").classList.contains('edit')) {
- e.target.closest("span").classList.add("show");
+if (e.target.closest('span').classList.contains('edit')) {
+ e.target.closest("div").classList.add("show");
         
-}else if (e.target.closest("i").className === 'fas fa-times') {
+}
+else if (e.target.closest("i").className === 'fa-times') {
         e.target.closest("i").classList.toggle("sprinter2");
 
-}else if (e.target.closest("i").className === 'fas fa-check') {
+}
+else if (e.target.closest("i").className === 'fa-check') {
         e.target.closest("i").classList.toggle("sprinter3");
         e.target.closest("li").classList.toggle("vice");
 
-}else if (e.target.closest("i").classList.contains("fa-thumbtack"))
+}
+else if (e.target.closest("i").classList.contains("fa-thumbtack"))
         e.target.closest("i").classList.toggle("sprinter");
 };
 

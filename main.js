@@ -13,8 +13,8 @@ let $closePopup; // close popup
 let $editBtn; // close popup
 
 const mainFct = () => {
-downloadEle();
-listenerEle();
+          downloadEle();
+          listenerEle();
 };
 
 const downloadEle = () => {
@@ -104,12 +104,11 @@ else if (e.target.closest("i").className === 'fas fa-check') {
 };
 
 const minimal = () => {
-$closePopup.style.display = "none";
 $popup.style.display = "none";
 };
 
 const openPopup = () => {
-$popup.style.display = "block";
+ $popup.style.display = "none";
 };
 
 document.addEventListener("DOMContentLoaded", mainFct);

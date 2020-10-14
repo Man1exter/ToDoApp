@@ -90,7 +90,7 @@ toolsPanel.appendChild(closeButton);
 };
 const changesLi = (e) => {
 
-if(e.target.closest("i").classList.contains("fa-thumbtack")){
+if(e.target.closest("i").className === "fa-thumbtack"){
 e.target.closest("i").classList.toggle("sprinter");
         
 } 

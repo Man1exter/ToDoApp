@@ -91,7 +91,7 @@ toolsPanel.appendChild(closeButton);
 };
 const changesLi = (e) => {
 
-if(e.target.closest("i").classList.contains("fa-thumbtack")){
+if (e.target.closest("i").classList.contains("fa-thumbtack")){
 e.target.closest("i").classList.toggle("sprinter");
         
 } 
@@ -102,13 +102,13 @@ else if (e.target.closest("i").className === 'fas fa-check') {
         e.target.closest("i").classList.toggle("sprinter3");
         e.target.closest("li").classList.toggle("vice");
 }
-else if(e.target.closest("span").className === 'edit'){
-        movePope();
+else if (e.target.closest("span").className === 'edit'){
+        openPopupTask();
 }
-};
 
-const movePope = () => {
-$popup.style.left = 0 + "%";
+};
+const openPopupTask = () => {
+
 };
 
 const minimal = () => {
@@ -116,7 +116,7 @@ $popup.style.left = -200 + "%";
 };
 
 const openPopup = () => {
- $popup.style.left = 0 + "%";
+$popup.style.left = 0 + "%";
  };
 
 document.addEventListener("DOMContentLoaded", mainFct);

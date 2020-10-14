@@ -10,7 +10,7 @@ let $editPopup; // edit popup
 let $inputPopup; // input popup
 let $buttonAddPopup; // button to add popup like a accept 
 let $closePopup; // close popup
-let $editBtn; // close popup
+let $editBtn; // open popup in tasks
 
 const mainFct = () => {
           downloadEle();

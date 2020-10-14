@@ -219,7 +219,7 @@ color: red;
     cursor: pointer;
     font-size: 32px;
     margin-left: 19px;
-    margin-top: 6px;
+    margin-top: 1px;
     border: none;
     background: rgba(0,0,0,0.0);
     transition: .1s linear;

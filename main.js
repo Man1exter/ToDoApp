@@ -6,7 +6,7 @@ let $tasksMainUL; //tasks below input and button
 let $newTasks; // NEW ADD ELEMENT TASKS
 
 let $popup; //main popup
-let $editPopup; // edit popup 
+let $editPopup; // edit popup change
 let $inputPopup; // input popup
 let $buttonAddPopup; // button to add popup like a accept 
 let $closePopup; // close popup
@@ -75,7 +75,7 @@ completeButton.style.left = 11 + "px";
 editButton.classList.add(".fa-times");
 editButton.innerHTML = '<i class="fas fa-check"></i>';
 
- const deleteButton = document.createElement('button');
+ const deleteButton = document.createElement('span');
 deleteButton.classList.add("new");
 deleteButton.innerText = 'EDIT';
 
@@ -91,8 +91,8 @@ toolsPanel.appendChild(closeButton);
 };
 const changesLi = (e) => {
 
-if (e.target.closest("i").classList.contains("fa-thumbtack")){
-e.target.closest("i").classList.toggle("sprinter");
+if (e.target.closest("span").classList.contains('edit')) {
+ e.target.closest("span").classList.add("show");
         
 }else if (e.target.closest("i").className === 'fas fa-times') {
         e.target.closest("i").classList.toggle("sprinter2");
@@ -101,8 +101,8 @@ e.target.closest("i").classList.toggle("sprinter");
         e.target.closest("i").classList.toggle("sprinter3");
         e.target.closest("li").classList.toggle("vice");
 
-}else if (e.target.closest("button").classList.contains('new'))
-        $popup.classList.add("show");
+}else if (e.target.closest("i").classList.contains("fa-thumbtack"))
+        e.target.closest("i").classList.toggle("sprinter");
 };
 
 
@@ -114,4 +114,4 @@ const openPopup = () => {
 $popup.style.left = 0 + "%";
 };
 
-document.addEventListener("DOMContentLoaded", mainFct)
+document.addEventListener("DOMContentLoaded", mainFct);

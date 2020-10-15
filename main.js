@@ -42,11 +42,12 @@ const listenerEle = () => {
 
 const addNewTasks = () => {
         if($inputMain.value !== ''){
+                $numberId++;
                  $newTasks = document.createElement("li");
                  $newTasks.style.display ="flex";
                  $newTasks.style.marginLeft = 0 + "px";
                  $newTasks.style.paddingLeft = 59 + "px"
-                
+                $newTasks.setAttribute('id', `newTask${$numberId}`)
                  $newTasks.innerText = $inputMain.value;
                  $tasksMainUL.appendChild($newTasks);
         
@@ -98,7 +99,7 @@ openTaskPopup(e);
         
 }
 else if (e.target.closest("i").className === '.fa-times') {
-        e.target.closest("i").classList.toggle("sprinter2");
+        e.target.closest("i").classList.add("sprinter2");
 
 }
 else if (e.target.closest("i").className === '.fa-check') {
@@ -107,8 +108,7 @@ else if (e.target.closest("i").className === '.fa-check') {
 
 }
 else if (e.target.closest('i').classList.contains('fa-thumbtack'))
-        e.target.closest("i").classList.toggle("sprinter");
-        e.target.closest("i").classList.toggle("sprinter2");
+        e.target.closest("i").classList.add("sprinter2");
 };
 const openTaskPopup = (e) => {
 const oldToolsTarget = e.target.closest('li').id;

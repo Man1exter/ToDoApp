@@ -36,6 +36,9 @@ const downloadEle = () => {
 const listenerEle = () => {
         $addMain.addEventListener("click", addNewTasks);
         $tasksMainUL.addEventListener("click", changesLi);
+        $tasksMainUL.addEventListener("click", changesLi2);
+        $tasksMainUL.addEventListener("click", changesLi3);
+        $tasksMainUL.addEventListener("click", changesLi4);
         $closePopup.addEventListener("click", minimal);
         $editBtn.addEventListener("click", openPopup);
         $buttonAddPopup.addEventListener("click", changePopup);
@@ -65,26 +68,27 @@ const addNewTasks = () => {
 
 const createToolsEle = () => {
 const toolsPanel = document.createElement('div');
-toolsPanel.classList.add(".tools");
+toolsPanel.classList.add("tools");
 $newTasks.appendChild(toolsPanel);
 
 const completeButton = document.createElement('i');
-completeButton.classList.add(".fa-thumbtack");
+completeButton.classList.add("cls");
 completeButton.innerHTML = '<i class="fas fa-thumbtack"></i>';
 completeButton.style.position = "absolute";
 completeButton.style.left = 11 + "px";
 
 
  const editButton = document.createElement('i');
-editButton.classList.add(".fa-times");
+editButton.classList.add("clg");
 editButton.innerHTML = '<i class="fas fa-check"></i>';
+
 
  const deleteButton = document.createElement('span');
 deleteButton.classList.add("new");
 deleteButton.innerText = 'EDIT';
 
  const closeButton = document.createElement("i");
-closeButton.classList.add(".fa-check");
+closeButton.classList.add("clf");
 closeButton.innerHTML = '<i class="fas fa-times"></i>';
 
 toolsPanel.appendChild(completeButton);
@@ -93,24 +97,25 @@ toolsPanel.appendChild(deleteButton);
 toolsPanel.appendChild(closeButton);
 
 };
+
 const changesLi = (e) => {
-
-if (e.target.closest('span').classList.contains('new')) {
-e.target.closest('span').classList.toggle('spot');
+if (e.target.closest('span').classList.contains('new')) 
 openTaskPopup(e);
-        
 }
-else if (e.target.closest("i").classList.contains('fa-times')) {
-        e.target.closest("i").classList.toggle("sprinter2");
 
+const changesLi2 = (e) => {
+ if (e.target.closest("i").className === 'clf') 
+esCheck();
 }
-else if (e.target.closest("i").classList.contains('fa-check')) {
-        e.target.closest("i").classList.toggle("sprinter3");
-        e.target.closest("li").classList.toggle("vice");
 
+const changesLi3 = (e) => {
+ if (e.target.closest('i').classList.contains('clg')) 
+ timesCheck();
 }
-else if (e.target.closest('i').classList.contains('.fa-thumbtack'))
-       e.target.closest('i').classList.toggle('sprinter2');
+
+const changesLi4 = (e) => {
+ if (e.target.closest('i').classList.contains('cls'))
+pickThem();
 };
 
 
@@ -139,5 +144,13 @@ const changePopup = () => {
         $infoPopup.innerText = "write some task"
         }
 }
+
+const pickThem = () => {
+editButton.style.color = "white";
+editButton.style.backgroundColor = "red";
+};
+
+
+
 
 document.addEventListener("DOMContentLoaded", mainFct);

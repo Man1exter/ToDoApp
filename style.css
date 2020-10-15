@@ -119,12 +119,12 @@ cursor: pointer;
     position: absolute;
     left: 92%;
     padding-top: 11px;
-    color: rgb(234, 0, 255);
+    color: rgb(2, 66, 63);
     transition: .1s linear;
     cursor: pointer;
 }
 .fa-times:hover{
-    color: red;
+    color: rgb(255, 0, 0);
 }
 .tools{
     margin-left: 10px;
@@ -232,4 +232,13 @@ color: red;
 }
 .spot{
     color: rgb(17, 0, 255);
+}
+.clg{
+    border: 0px solid black;
+}
+.cls{
+    border: 0px solid black;
+}
+.clf{
+    border: 0px solid black;
 }

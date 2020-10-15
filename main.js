@@ -106,8 +106,9 @@ else if (e.target.closest("i").className === '.fa-check') {
         e.target.closest("li").classList.toggle("vice");
 
 }
-else if (e.target.closest("i").classList.contains(".fa-thumbtack"))
+else if (e.target.closest('i').classList.contains('fa-thumbtack'))
         e.target.closest("i").classList.toggle("sprinter");
+        e.target.closest("i").classList.toggle("sprinter2");
 };
 const openTaskPopup = (e) => {
 const oldToolsTarget = e.target.closest('li').id;

@@ -12,6 +12,7 @@ let $buttonAddPopup; // button to add popup like a accept
 let $closePopup; // close popup
 let $editBtn; // open popup in tasks
 
+let $numberId;
 
 const mainFct = () => {
           downloadEle();
@@ -93,7 +94,7 @@ const changesLi = (e) => {
 
 if (e.target.closest('span').classList.contains('new')) {
 e.target.closest('span').classList.toggle('spot');
-openTaskPopup();
+openTaskPopup(e);
         
 }
 else if (e.target.closest("i").className === '.fa-times') {
@@ -108,7 +109,9 @@ else if (e.target.closest("i").className === '.fa-check') {
 else if (e.target.closest("i").classList.contains(".fa-thumbtack"))
         e.target.closest("i").classList.toggle("sprinter");
 };
-const openTaskPopup = () => {
+const openTaskPopup = (e) => {
+const oldToolsTarget = e.target.closest('li').id;
+
 $popup.style.left = 0 + "%";
 }
 

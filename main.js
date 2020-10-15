@@ -118,6 +118,8 @@ const openTaskPopup = (e) => {
 const oldToolsTarget = e.target.closest('li').id;
 $editTodo = document.getElementById(oldToolsTarget);
 
+$inputPopup.value = $editTodo.firstChild.textContent;
+
 $popup.style.left = 0 + "%";
 }
 

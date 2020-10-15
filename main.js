@@ -136,7 +136,7 @@ const changePopup = () => {
                 $editTodo.firstChild.textContent = $infoPopup.value;
                 $popup.style.left = -200 + "%";
         }else{
-
+        $infoPopup.innerText = "write some task"
         }
 }
 

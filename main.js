@@ -14,7 +14,7 @@ let $editBtn; // open popup in tasks
 
 let $numberId = 0;
 
-let editTodo; // edited todo task name topic its
+let $editTodo; // edited todo task name topic its
 
 const mainFct = () => {
           downloadEle();
@@ -116,6 +116,7 @@ else if (e.target.closest('i').classList.contains('.fa-thumbtack'))
 
 const openTaskPopup = (e) => {
 const oldToolsTarget = e.target.closest('li').id;
+$editTodo = document.getElementById(oldToolsTarget);
 
 $popup.style.left = 0 + "%";
 }

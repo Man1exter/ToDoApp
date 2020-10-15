@@ -92,7 +92,6 @@ toolsPanel.appendChild(closeButton);
 const changesLi = (e) => {
 
 if (e.target.closest('span').classList.contains('new')) {
-e.target.closest('div.popup').classList.toggle('show');
 e.target.closest('span').classList.toggle('spot');
 openTaskPopup();
         

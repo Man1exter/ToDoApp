@@ -38,6 +38,7 @@ const listenerEle = () => {
         $tasksMainUL.addEventListener("click", changesLi);
         $closePopup.addEventListener("click", minimal);
         $editBtn.addEventListener("click", openPopup);
+        $buttonAddPopup.addEventListener("click", changePopup);
 };
 
 
@@ -129,5 +130,14 @@ $popup.style.left = -200 + "%";
 const openPopup = () => {
 $popup.style.left = 0 + "%";
 };
+
+const changePopup = () => {
+        if($infoPopup.value !== ''){
+                $editTodo.firstChild.textContent = $infoPopup.value;
+
+        }else{
+
+        }
+}
 
 document.addEventListener("DOMContentLoaded", mainFct);

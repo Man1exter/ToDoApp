@@ -98,18 +98,20 @@ e.target.closest('span').classList.toggle('spot');
 openTaskPopup(e);
         
 }
-else if (e.target.closest("i").className === '.fa-times') {
-        e.target.closest("i").classList.add("sprinter2");
+else if (e.target.closest("i").classList.contains('fa-times')) {
+        e.target.closest("i").classList.toggle("sprinter2");
 
 }
-else if (e.target.closest("i").className === '.fa-check') {
+else if (e.target.closest("i").classList.contains('fa-check')) {
         e.target.closest("i").classList.toggle("sprinter3");
         e.target.closest("li").classList.toggle("vice");
 
 }
-else if (e.target.closest('i').classList.contains('fa-thumbtack'))
-        e.target.closest("i").classList.add("sprinter2");
+else if (e.target.closest('i').classList.contains('.fa-thumbtack'))
+       e.target.closest('i').classList.toggle('sprinter2');
 };
+
+
 const openTaskPopup = (e) => {
 const oldToolsTarget = e.target.closest('li').id;
 

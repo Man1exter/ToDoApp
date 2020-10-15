@@ -14,7 +14,6 @@ let $editBtn; // open popup in tasks
 
 let $numberId = 0;
 
-let $editTodo; // edited todo task name topic its
 
 const mainFct = () => {
           downloadEle();
@@ -118,7 +117,7 @@ const openTaskPopup = (e) => {
 const oldToolsTarget = e.target.closest('li').id;
 $editTodo = document.getElementById(oldToolsTarget);
 
-$inputPopup.value = $editTodo.firstChild.textContent;
+$infoPopup.value = $editTodo.firstChild.textContent;
 
 $popup.style.left = 0 + "%";
 }

@@ -134,7 +134,7 @@ $popup.style.left = 0 + "%";
 const changePopup = () => {
         if($infoPopup.value !== ''){
                 $editTodo.firstChild.textContent = $infoPopup.value;
-
+                $popup.style.left = -200 + "%";
         }else{
 
         }

@@ -14,6 +14,8 @@ let $editBtn; // open popup in tasks
 
 let $numberId = 0;
 
+let editTodo; // edited todo task name topic its
+
 const mainFct = () => {
           downloadEle();
           listenerEle();

@@ -12,7 +12,7 @@ let $buttonAddPopup; // button to add popup like a accept
 let $closePopup; // close popup
 let $editBtn; // open popup in tasks
 
-let $numberId;
+let $numberId = 0;
 
 const mainFct = () => {
           downloadEle();

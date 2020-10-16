@@ -74,7 +74,7 @@ li{
     background: linear-gradient(to bottom right,rgb(0, 60, 255),rgb(238, 255, 0),green);
     width: 100%;
    font-size: 30px;
-   line-height: 50px;
+   line-height: 45px;
    border-radius: 2.5px;
    /* cursor: pointer; */
    text-align: left;
@@ -254,15 +254,26 @@ color: red;
     border: 2px solid black;
     width: 50px;
     height: 50px;
-    margin-top: 10px;
+    margin-top: 50px;
     border-radius: 5px;
-    background-color: lightblue;
-}
-.pick{
     background-color: rgb(17, 0, 255);
-    margin-top: -55px;
-    margin-bottom: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
 }
 .pick:hover{
     background-color: orange;
+}
+.yes{
+    border: 2px solid blue;
+    height: 50px;
+    width: 50px;
+    font-size: 40px;
+    cursor: pointer;
+}
+.no{
+    border: 2px solid blue;
+    height: 50px;
+    width: 50px;
+    font-size: 40px;
+    cursor: pointer;
 }

@@ -48,9 +48,9 @@ const addNewTasks = () => {
         if($inputMain.value !== ''){
                 $numberId++;
                  $newTasks = document.createElement("li");
-                 $newTasks.style.display ="flex";
-                 $newTasks.style.marginLeft = 0 + "px";
-                 $newTasks.style.paddingLeft = 59 + "px"
+                 $newTasks.style.display = "relative";
+
+
                 $newTasks.setAttribute('id', `newTask${$numberId}`)
                  $newTasks.innerText = $inputMain.value;
                  $tasksMainUL.appendChild($newTasks);
@@ -74,24 +74,27 @@ const completeButton = document.createElement('button');
 completeButton.classList.add("pick");
 completeButton.innerHTML = '<i class="fas fa-thumbtack"></i>';
 completeButton.style.position = "relative";
-completeButton.style.left = -166 + "%";
+completeButton.style.left = 10 + "%";
 
 
  const editButton = document.createElement('button');
 editButton.classList.add("yes");
 editButton.innerHTML = '<i class="fas fa-check"></i>';
 editButton.style.position = "relative";
+editButton.style.left = 60 + "%";
 
 
  const deleteButton = document.createElement('span');
 deleteButton.classList.add("new");
 deleteButton.innerText = 'EDIT';
 deleteButton.style.position = "relative";
+deleteButton.style.left = 65 + "%";
 
  const closeButton = document.createElement("button");
 closeButton.classList.add("no");
 closeButton.innerHTML = '<i class="fas fa-times"></i>';
 closeButton.style.position = "relative";
+closeButton.style.left = 70 + "%";
 
 
 toolsPanel.appendChild(completeButton);

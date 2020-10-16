@@ -113,10 +113,9 @@ font-size: 24px;
 }
 .tools{
     margin-left: 10px;
-    position: relative;
 }
 ul{
-    overflow: hidden;
+    overflow: hidden; 
 }
 .sprinter{
     background-color: rgb(60, 255, 0);

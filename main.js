@@ -92,8 +92,8 @@ deleteButton.innerText = 'EDIT';
  const closeButton = document.createElement("button");
 closeButton.classList.add("clf");
 closeButton.innerHTML = '<i class="fas fa-times"></i>';
-closeButton.style.position = "absolute"
-closeButton.style.left = 92 + "%"
+closeButton.style.position = "absolute";
+closeButton.style.left = 92 + "%";
 
 toolsPanel.appendChild(completeButton);
 toolsPanel.appendChild(editButton);

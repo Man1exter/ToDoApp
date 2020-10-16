@@ -100,9 +100,7 @@ font-size: 24px;
 .edit{
     padding-left: 20px;
     transition: .1s linear;
-    position: absolute;
-    left: 80%;
-    top: 67%;
+    position: relative;
     color: blue;
     cursor: pointer;
     font-size: 40px;
@@ -115,7 +113,7 @@ font-size: 24px;
 }
 .tools{
     margin-left: 10px;
-    line-height: 60px;
+    line-height: 70px;
     margin-top: 1px;
     margin-bottom: -10px;
 }

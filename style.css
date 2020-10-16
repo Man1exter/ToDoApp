@@ -113,9 +113,12 @@ font-size: 24px;
 }
 .tools{
     margin-left: 10px;
+    height: 100px;
+    margin-top: -50px;
 }
 ul{
-    overflow: hidden; 
+    /* overflow: hidden;  */
+    position: relative;
 }
 .sprinter{
     background-color: rgb(60, 255, 0);
@@ -130,10 +133,6 @@ color: red;
         color: red;
         }
         
-.vice{
-    text-decoration: line-through;
-    color: gray;
-}
    .popup{
        position: absolute;
        border: 5px solid green;
@@ -203,7 +202,7 @@ color: red;
     color: blue;
     cursor: pointer;
     font-size: 32px;
-    margin-left: 19px;
+    margin-left: 17px;
     border: none;
     background: rgba(0,0,0,0.0);
     transition: .1s linear;

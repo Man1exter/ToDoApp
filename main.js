@@ -81,6 +81,8 @@ completeButton.style.left = 11 + "px";
  const editButton = document.createElement('button');
 editButton.classList.add("clg");
 editButton.innerHTML = '<i class="fas fa-check"></i>';
+editButton.style.position = "absolute";
+editButton.style.left = 75 + "%";
 
 
  const deleteButton = document.createElement('span');
@@ -90,6 +92,8 @@ deleteButton.innerText = 'EDIT';
  const closeButton = document.createElement("button");
 closeButton.classList.add("clf");
 closeButton.innerHTML = '<i class="fas fa-times"></i>';
+closeButton.style.position = "absolute"
+closeButton.style.left = 92 + "%"
 
 toolsPanel.appendChild(completeButton);
 toolsPanel.appendChild(editButton);

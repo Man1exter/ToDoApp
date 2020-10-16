@@ -142,10 +142,6 @@ const changePopup = () => {
         }
 }
 
-const pickThem = () => {
-editButton.style.color = "white";
-editButton.style.backgroundColor = "red";
-};
 
 
 

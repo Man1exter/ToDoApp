@@ -49,7 +49,9 @@ const addNewTasks = () => {
                 $numberId++;
                  $newTasks = document.createElement("li");
                  $newTasks.style.display = "relative";
-                 $newTasks.style.height = 50 + "px"
+                 $newTasks.style.height = 50 + "px";
+                 $newTasks.style.textAlign = "center";
+                
 
 
                 $newTasks.setAttribute('id', `newTask${$numberId}`)
@@ -69,14 +71,14 @@ const addNewTasks = () => {
 const createToolsEle = () => {
 const toolsPanel = document.createElement('div');
 toolsPanel.classList.add("tools");
-toolsPanel.style.position = "relative"
+toolsPanel.style.marginTop = -9 + "%"
 $newTasks.appendChild(toolsPanel);
 
 const completeButton = document.createElement('button');
 completeButton.classList.add("pick");
 completeButton.innerHTML = '<i class="fas fa-thumbtack"></i>';
 completeButton.style.position = "relative";
-completeButton.style.left = 10 + "%";
+completeButton.style.left = -36 + "%";
 
 
 
@@ -84,20 +86,23 @@ completeButton.style.left = 10 + "%";
 editButton.classList.add("yes");
 editButton.innerHTML = '<i class="fas fa-check"></i>';
 editButton.style.position = "relative";
-editButton.style.left = 68.5 + "%";
+editButton.style.left = 31.8 + "%";
 
 
  const deleteButton = document.createElement('span');
 deleteButton.classList.add("new");
 deleteButton.innerText = 'EDIT';
 deleteButton.style.position = "relative";
-deleteButton.style.left = 70 + "%";
+deleteButton.style.left = 32.5 + "%";
+deleteButton.style.paddingLeft = 20 + "px"
+deleteButton.style.paddingTop = 10 + "px"
+deleteButton.style.paddingRight = 20 + "px"
 
  const closeButton = document.createElement("button");
 closeButton.classList.add("no");
 closeButton.innerHTML = '<i class="fas fa-times"></i>';
 closeButton.style.position = "relative";
-closeButton.style.left = 73 + "%";
+closeButton.style.left = 35 + "%";
 
 
 toolsPanel.appendChild(completeButton);
@@ -112,7 +117,7 @@ if (e.target.closest('span').classList.contains('new')) {
 openTaskPopup(e);
 
 
-} else if (e.target.closest("button").className === 'clf') {
+} else if (e.target.closest("button").className === 'no') {
 esRemove(e);
 
 } else if (e.target.closest('button').classList.contains('clg')) {

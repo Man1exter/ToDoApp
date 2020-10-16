@@ -42,7 +42,6 @@ body{
     font-size: 50px;
     transition: .3s linear;
     text-align: center;
-    margin-top: 20px;
 }
 .todo:hover{
     background-color: rgb(4, 221, 120);
@@ -69,6 +68,7 @@ body{
 .text1{
     color: rgb(221, 220, 220);
     font-size: 35px;
+    position: relative;
 }
 li{
     background: linear-gradient(to bottom right,rgb(0, 60, 255),rgb(238, 255, 0),green);
@@ -81,11 +81,11 @@ li{
    border: 1px solid black;
 }
 .fa-thumbtack{
-padding: 10px;
+padding: 5px;
+padding-top: 20px;
 border-radius: 2.5px;
 background-color: rgb(124, 206, 233);
 transition: .3s linear;
-margin-left: 0%;
 cursor: pointer;
 font-size: 24px;
 }
@@ -97,28 +97,32 @@ font-size: 24px;
     color: red;
 }
 .edit{
-    padding-left: 10px;
     transition: .1s linear;
     position: relative;
     margin-left: 20px;
     margin-right: 20px;
     color: blue;
     cursor: pointer;
+    border: 2px solid blue;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
 }
 .edit:hover{
     color: red;
+    background-color: lightgreen;
 }
 .fa-times:hover{
     color: rgb(255, 0, 0);
 }
 .tools{
-    margin-left: 10px;
     height: 100px;
     margin-top: -50px;
 }
 ul{
     /* overflow: hidden;  */
     position: relative;
+    margin-top: 50px;
 }
 .sprinter{
     background-color: rgb(60, 255, 0);
@@ -203,12 +207,13 @@ color: red;
     cursor: pointer;
     font-size: 32px;
     margin-left: 17px;
-    border: none;
+    border: 2px solid blue;
     background: rgba(0,0,0,0.0);
     transition: .1s linear;
 }
 .new:hover{
     color: red;
+    background-color: lightgreen;
 }
 .show{
     left: 0%;

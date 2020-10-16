@@ -71,14 +71,14 @@ const toolsPanel = document.createElement('div');
 toolsPanel.classList.add("tools");
 $newTasks.appendChild(toolsPanel);
 
-const completeButton = document.createElement('i');
+const completeButton = document.createElement('button');
 completeButton.classList.add("cls");
 completeButton.innerHTML = '<i class="fas fa-thumbtack"></i>';
 completeButton.style.position = "absolute";
 completeButton.style.left = 11 + "px";
 
 
- const editButton = document.createElement('i');
+ const editButton = document.createElement('button');
 editButton.classList.add("clg");
 editButton.innerHTML = '<i class="fas fa-check"></i>';
 
@@ -87,7 +87,7 @@ editButton.innerHTML = '<i class="fas fa-check"></i>';
 deleteButton.classList.add("new");
 deleteButton.innerText = 'EDIT';
 
- const closeButton = document.createElement("i");
+ const closeButton = document.createElement("button");
 closeButton.classList.add("clf");
 closeButton.innerHTML = '<i class="fas fa-times"></i>';
 
@@ -104,17 +104,17 @@ openTaskPopup(e);
 }
 
 const changesLi2 = (e) => {
- if (e.target.closest("i").className === 'clf') 
+ if (e.target.closest("button").className === 'clf') 
 esCheck();
 }
 
 const changesLi3 = (e) => {
- if (e.target.closest('i').classList.contains('clg')) 
+ if (e.target.closest('button').classList.contains('clg')) 
  timesCheck();
 }
 
 const changesLi4 = (e) => {
- if (e.target.closest('i').classList.contains('cls'))
+ if (e.target.closest('button').classList.contains('cls'))
 pickThem();
 };
 

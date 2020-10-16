@@ -235,10 +235,14 @@ color: red;
 }
 .clg{
     border: 0px solid black;
+    font-size: 30px;
 }
 .cls{
     border: 0px solid black;
+    font-size: 30px;
+    border-radius: 5px;
 }
 .clf{
     border: 0px solid black;
+    font-size: 30px;
 }

@@ -93,14 +93,7 @@ font-size: 24px;
 .fa-thumbtack:hover{
     background-color: red;
 }
-.fa-check{
-   position: absolute;
-   left: 75%;
-   padding-top: 11px;
-   transition: .1s linear;
-   color: green;
-   cursor: pointer;
-}
+
 .fa-check:hover{
     color: red;
 }
@@ -114,14 +107,6 @@ font-size: 24px;
 }
 .edit:hover{
     color: red;
-}
-.fa-times{
-    position: absolute;
-    left: 92%;
-    padding-top: 11px;
-    color: rgb(2, 66, 63);
-    transition: .1s linear;
-    cursor: pointer;
 }
 .fa-times:hover{
     color: rgb(255, 0, 0);
@@ -257,8 +242,9 @@ color: red;
     margin-top: 50px;
     border-radius: 5px;
     background-color: rgb(17, 0, 255);
-    margin-top: 5px;
-    margin-bottom: 15px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    cursor: pointer;
 }
 .pick:hover{
     background-color: orange;
@@ -269,6 +255,10 @@ color: red;
     width: 50px;
     font-size: 40px;
     cursor: pointer;
+    margin-top: 50px;
+    position: absolute;
+    left: 75%;
+    top: 55%;
 }
 .no{
     border: 2px solid blue;
@@ -276,4 +266,7 @@ color: red;
     width: 50px;
     font-size: 40px;
     cursor: pointer;
+    position: absolute;
+    left: 90%;
+    top: 70%;
 }

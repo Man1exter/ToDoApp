@@ -13,7 +13,7 @@ let $closePopup; // close popup
 let $editBtn; // open popup in tasks
 
 let $numberId = 0;
-
+let $allTasksLi;
 
 const mainFct = () => {
           downloadEle();
@@ -31,6 +31,8 @@ const downloadEle = () => {
         $infoPopup = document.querySelector(".popin");
         $popup = document.querySelector(".popup");
         $editBtn = document.querySelector(".edit");
+        $allTasksLi = $tasksMainUL.getElementsByTagName("li");
+
 };
 
 const listenerEle = () => {
@@ -105,7 +107,7 @@ openTaskPopup(e);
 
 
 } else if (e.target.closest("button").className === 'clf') {
-esCheck(e);
+esRemove(e);
 
 } else if (e.target.closest('button').classList.contains('clg')) {
  timesCheck();
@@ -143,9 +145,9 @@ const changePopup = () => {
         $infoPopup.innerText = "write some task"
         }
 }
-const esCheck = (e) => {
-        const deleteTaskPr = e.target.closest("li")
-        $newTasks.style.backgroundColor = "gray";
+const esRemove = (e) => {
+        const deleteTaskPr = e.target.closest("li");
+        deleteTaskPr.remove();
 }
 
 

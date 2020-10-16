@@ -96,7 +96,7 @@ cursor: pointer;
 .fa-check{
    position: absolute;
    left: 75%;
-   padding-top: 10px;
+   padding-top: 11px;
    transition: .1s linear;
    color: green;
    cursor: pointer;

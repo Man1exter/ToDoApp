@@ -36,9 +36,6 @@ const downloadEle = () => {
 const listenerEle = () => {
         $addMain.addEventListener("click", addNewTasks);
         $tasksMainUL.addEventListener("click", changesLi);
-        $tasksMainUL.addEventListener("click", changesLi2);
-        $tasksMainUL.addEventListener("click", changesLi3);
-        $tasksMainUL.addEventListener("click", changesLi4);
         $closePopup.addEventListener("click", minimal);
         $editBtn.addEventListener("click", openPopup);
         $buttonAddPopup.addEventListener("click", changePopup);
@@ -103,23 +100,19 @@ toolsPanel.appendChild(closeButton);
 };
 
 const changesLi = (e) => {
-if (e.target.closest('span').classList.contains('new')) 
+if (e.target.closest('span').classList.contains('new')) {
 openTaskPopup(e);
-}
 
-const changesLi2 = (e) => {
- if (e.target.closest("button").className === 'clf') 
+
+} else if (e.target.closest("button").className === 'clf') {
 esCheck();
-}
 
-const changesLi3 = (e) => {
- if (e.target.closest('button').classList.contains('clg')) 
+} else if (e.target.closest('button').classList.contains('clg')) {
  timesCheck();
-}
 
-const changesLi4 = (e) => {
- if (e.target.closest('button').classList.contains('cls'))
+} else if (e.target.closest('button').classList.contains('cls'))
 pickThem();
+
 };
 
 

@@ -105,13 +105,15 @@ openTaskPopup(e);
 
 
 } else if (e.target.closest("button").className === 'clf') {
-esCheck();
+esCheck(e);
 
 } else if (e.target.closest('button').classList.contains('clg')) {
  timesCheck();
 
-} else if (e.target.closest('button').classList.contains('cls'))
+} else if (e.target.closest('button').classList.contains('cls')){
+
 pickThem();
+}
 
 };
 
@@ -141,7 +143,10 @@ const changePopup = () => {
         $infoPopup.innerText = "write some task"
         }
 }
-
+const esCheck = (e) => {
+        const deleteTaskPr = e.target.closest("li")
+        $newTasks.style.backgroundColor = "gray";
+}
 
 
 

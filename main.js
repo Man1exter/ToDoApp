@@ -71,28 +71,28 @@ toolsPanel.classList.add("tools");
 $newTasks.appendChild(toolsPanel);
 
 const completeButton = document.createElement('button');
-completeButton.classList.add("cls");
+completeButton.classList.add("pick");
 completeButton.innerHTML = '<i class="fas fa-thumbtack"></i>';
-completeButton.style.position = "absolute";
-completeButton.style.left = 11 + "px";
+completeButton.style.position = "relative";
+completeButton.style.left = -166 + "%";
 
 
  const editButton = document.createElement('button');
-editButton.classList.add("clg");
+editButton.classList.add("yes");
 editButton.innerHTML = '<i class="fas fa-check"></i>';
-editButton.style.position = "absolute";
-editButton.style.left = 75 + "%";
+editButton.style.position = "relative";
 
 
  const deleteButton = document.createElement('span');
 deleteButton.classList.add("new");
 deleteButton.innerText = 'EDIT';
+deleteButton.style.position = "relative";
 
  const closeButton = document.createElement("button");
-closeButton.classList.add("clf");
+closeButton.classList.add("no");
 closeButton.innerHTML = '<i class="fas fa-times"></i>';
-closeButton.style.position = "absolute";
-closeButton.style.left = 92 + "%";
+closeButton.style.position = "relative";
+
 
 toolsPanel.appendChild(completeButton);
 toolsPanel.appendChild(editButton);

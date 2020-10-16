@@ -74,7 +74,6 @@ li{
     background: linear-gradient(to bottom right,rgb(0, 60, 255),rgb(238, 255, 0),green);
     width: 100%;
    font-size: 30px;
-   line-height: 45px;
    border-radius: 2.5px;
    /* cursor: pointer; */
    text-align: left;
@@ -98,12 +97,13 @@ font-size: 24px;
     color: red;
 }
 .edit{
-    padding-left: 20px;
+    padding-left: 10px;
     transition: .1s linear;
     position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
     color: blue;
     cursor: pointer;
-    font-size: 40px;
 }
 .edit:hover{
     color: red;
@@ -113,9 +113,7 @@ font-size: 24px;
 }
 .tools{
     margin-left: 10px;
-    line-height: 70px;
-    margin-top: 1px;
-    margin-bottom: -10px;
+    position: relative;
 }
 ul{
     overflow: hidden;
@@ -203,12 +201,10 @@ color: red;
     transition: .1s linear;
     position: absolute;
     left: 80%;
-    top: 88%;
     color: blue;
     cursor: pointer;
     font-size: 32px;
     margin-left: 19px;
-    margin-top: 1px;
     border: none;
     background: rgba(0,0,0,0.0);
     transition: .1s linear;
@@ -239,13 +235,8 @@ color: red;
     position: relative;
     border: 2px solid black;
     width: 50px;
-    height: 50px;
-    margin-top: 0px;
-    margin-bottom: 30px;
     border-radius: 5px;
     background-color: rgb(17, 0, 255);
-    margin-top: 50px;
-    margin-bottom: 50px;
     cursor: pointer;
 }
 .pick:hover{
@@ -257,14 +248,16 @@ color: red;
     width: 50px;
     font-size: 40px;
     cursor: pointer;
+    margin-top: 50px;
     position: relative;
+    background: rgba(0,0,0,0.0);
 }
 .no{
-    border: 2px solid blue;
+    border: 2px solid rgb(0, 17, 255);
     height: 50px;
     width: 50px;
     font-size: 40px;
     cursor: pointer;
     position: relative;
-    margin-left: 12%;
+    background: rgba(0,0,0,0.0);
 }

@@ -11,6 +11,7 @@ let $inputPopup; // input popup
 let $buttonAddPopup; // button to add popup like a accept 
 let $closePopup; // close popup
 let $editBtn; // open popup in tasks
+
 let $yes; // accept button
 let $no; // delete button
 
@@ -35,6 +36,9 @@ const downloadEle = () => {
         $editBtn = document.querySelector(".edit");
         $allTasksLi = $tasksMainUL.getElementsByTagName("li");
 
+        $yes = document.querySelector(".yes");
+        $no = document.querySelector(".no");
+
 };
 
 const listenerEle = () => {
@@ -44,6 +48,9 @@ const listenerEle = () => {
         $editBtn.addEventListener("click", openPopup);
         $buttonAddPopup.addEventListener("click", changePopup);
         $inputMain.addEventListener("keyup",keyCodeMove);
+
+        $yes.addEventListener("click" , acceptTask);
+        $no.addEventListener("click" , deleteTask);
 };
 
 
@@ -127,21 +134,30 @@ const changesLi = (e) => {
 if (e.target.closest('span').classList.contains('new')) {
 e.target.closest('span').classList.toggle('movs');
 openTaskPopup(e);
+}
+}
 
-} else if (e.target.closest('button').classList.contains('no')) {
+const deleteTask = (e) => {
+ if (e.target.closest('button').classList.contains('no')){ 
 e.target.closest('button').classList.toggle('movs');
 esRemove(e);
-
-} else if (e.target.closest('button').className === 'yes') {
+} 
+}
+const acceptTask = (e) => {
+ if (e.target.closest('button').className === 'yes') {
 e.target.closest('button').classList.toggle('movs');
  timesCheck(e);
-
-} else if (e.target.closest('button').className === 'pick'){
+} 
+}
+const pickers = (e) => {
+if (e.target.closest('button').className === 'pick'){
 e.target.closest('button').classList.toggle('picker');
 pickThem(e);
 }
+}
 
-};
+
+
 
 
 const openTaskPopup = (e) => {

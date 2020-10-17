@@ -99,7 +99,7 @@ deleteButton.style.paddingTop = 10 + "px"
 deleteButton.style.paddingRight = 20 + "px"
 
  const closeButton = document.createElement("button");
-closeButton.classList.add("no");
+closeButton.classList.add('no');
 closeButton.innerHTML = '<i class="fas fa-times"></i>';
 closeButton.style.position = "relative";
 closeButton.style.left = 35 + "%";
@@ -117,15 +117,14 @@ if (e.target.closest('span').classList.contains('new')) {
 openTaskPopup(e);
 
 
-} else if (e.target.closest("button").className === 'no') {
+} else if (e.target.closest('button').className === 'no') {
 esRemove(e);
 
-} else if (e.target.closest('button').classList.contains('clg')) {
- timesCheck();
+} else if (e.target.closest('button').className === 'yes') {
+ timesCheck(e);
 
-} else if (e.target.closest('button').classList.contains('cls')){
-
-pickThem();
+} else if (e.target.closest('button').className === 'pick'){
+pickThem(e);
 }
 
 };

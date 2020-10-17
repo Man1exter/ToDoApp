@@ -41,6 +41,7 @@ const listenerEle = () => {
         $closePopup.addEventListener("click", minimal);
         $editBtn.addEventListener("click", openPopup);
         $buttonAddPopup.addEventListener("click", changePopup);
+        $inputMain.addEventListener("keyup",keyCodeMove);
 };
 
 
@@ -67,6 +68,13 @@ const addNewTasks = () => {
         $alert.style.textTransform = "uppercase"
           }
         };
+
+
+        const keyCodeMove = (eve) => {
+                if(eve.keyCode === 13){
+                addNewTasks(eve);
+                }
+        }; 
 
 const createToolsEle = () => {
 const toolsPanel = document.createElement('div');

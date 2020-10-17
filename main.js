@@ -73,7 +73,7 @@ const addNewTasks = () => {
         const keyCodeMove = (eve) => {
                 if(eve.keyCode === 13){
                 addNewTasks(eve);
-                }
+                };
         }; 
 
 const createToolsEle = () => {

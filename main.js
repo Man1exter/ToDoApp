@@ -11,6 +11,8 @@ let $inputPopup; // input popup
 let $buttonAddPopup; // button to add popup like a accept 
 let $closePopup; // close popup
 let $editBtn; // open popup in tasks
+let $yes; // accept button
+let $no; // delete button
 
 let $numberId = 0;
 let $allTasksLi;

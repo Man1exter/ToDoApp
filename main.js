@@ -52,6 +52,7 @@ const addNewTasks = () => {
                  $newTasks.style.display = "relative";
                  $newTasks.style.height = 50 + "px";
                  $newTasks.style.textAlign = "center";
+                 $newTasks.style.lineHeight  = 50 + "px"
                 
 
 
@@ -79,7 +80,7 @@ const addNewTasks = () => {
 const createToolsEle = () => {
 const toolsPanel = document.createElement('div');
 toolsPanel.classList.add("tools");
-toolsPanel.style.marginTop = -9 + "%"
+toolsPanel.style.marginTop = -10.5 + "%"
 $newTasks.appendChild(toolsPanel);
 
 const completeButton = document.createElement('button');

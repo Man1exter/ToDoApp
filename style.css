@@ -265,6 +265,10 @@ color: red;
     background: rgba(0,0,0,0.0);
 }
 .movs{
-    color: black;
+    color: rgb(255, 230, 0);
     background-color: lightgreen;
+}
+.picker{
+    background-color: green;
+    color: white;
 }

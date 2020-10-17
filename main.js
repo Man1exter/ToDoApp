@@ -125,14 +125,16 @@ if (e.target.closest('span').classList.contains('new')) {
 e.target.closest('span').classList.toggle('movs');
 openTaskPopup(e);
 
-
-} else if (e.target.closest('button').className === 'no') {
+} else if (e.target.closest('button').classList.contains('no')) {
+e.target.closest('button').classList.toggle('movs');
 esRemove(e);
 
 } else if (e.target.closest('button').className === 'yes') {
+e.target.closest('button').classList.toggle('movs');
  timesCheck(e);
 
 } else if (e.target.closest('button').className === 'pick'){
+e.target.closest('button').classList.toggle('picker');
 pickThem(e);
 }
 

@@ -4,6 +4,7 @@ let $alert; // alert to add tasks
 let $addMain; // main button to add tasks below
 let $tasksMainUL; //tasks below input and button
 let $newTasks; // NEW ADD ELEMENT TASKS
+let $allEffectOnUl;
 
 let $popup; //main popup
 let $editPopup; // edit popup change
@@ -11,7 +12,6 @@ let $inputPopup; // input popup
 let $buttonAddPopup; // button to add popup like a accept 
 let $closePopup; // close popup
 let $editBtn; // open popup in tasks
-
 let $yes; // accept button
 let $no; // delete button
 
@@ -36,9 +36,6 @@ const downloadEle = () => {
         $editBtn = document.querySelector(".edit");
         $allTasksLi = $tasksMainUL.getElementsByTagName("li");
 
-        $yes = document.querySelector(".yes");
-        $no = document.querySelector(".no");
-
 };
 
 const listenerEle = () => {
@@ -48,9 +45,6 @@ const listenerEle = () => {
         $editBtn.addEventListener("click", openPopup);
         $buttonAddPopup.addEventListener("click", changePopup);
         $inputMain.addEventListener("keyup",keyCodeMove);
-
-        $yes.addEventListener("click" , acceptTask);
-        $no.addEventListener("click" , deleteTask);
 };
 
 
@@ -134,30 +128,21 @@ const changesLi = (e) => {
 if (e.target.closest('span').classList.contains('new')) {
 e.target.closest('span').classList.toggle('movs');
 openTaskPopup(e);
-}
-}
 
-const deleteTask = (e) => {
- if (e.target.closest('button').classList.contains('no')){ 
+} else if (e.target.closest('button').classList.contains('no')) {
 e.target.closest('button').classList.toggle('movs');
 esRemove(e);
-} 
-}
-const acceptTask = (e) => {
- if (e.target.closest('button').className === 'yes') {
+
+} else if (e.target.closest('button').className === 'yes') {
 e.target.closest('button').classList.toggle('movs');
  timesCheck(e);
-} 
-}
-const pickers = (e) => {
-if (e.target.closest('button').className === 'pick'){
+
+} else if (e.target.closest('button').className === 'pick'){
 e.target.closest('button').classList.toggle('picker');
 pickThem(e);
 }
-}
 
-
-
+};
 
 
 const openTaskPopup = (e) => {

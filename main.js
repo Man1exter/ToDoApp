@@ -87,7 +87,7 @@ toolsPanel.style.marginTop = -10.5 + "%"
 $newTasks.appendChild(toolsPanel);
 
 const completeButton = document.createElement('button');
-completeButton.classList.add("pick");
+completeButton.classList.add("pickBtn");
 completeButton.innerHTML = '<i class="fas fa-thumbtack"></i>';
 completeButton.style.position = "relative";
 completeButton.style.left = -36 + "%";
@@ -95,7 +95,7 @@ completeButton.style.left = -36 + "%";
 
 
  const editButton = document.createElement('button');
-editButton.classList.add("yes");
+editButton.classList.add("yesBtn");
 editButton.innerHTML = '<i class="fas fa-check"></i>';
 editButton.style.position = "relative";
 editButton.style.left = 31.8 + "%";
@@ -111,7 +111,7 @@ deleteButton.style.paddingTop = 10 + "px"
 deleteButton.style.paddingRight = 20 + "px"
 
  const closeButton = document.createElement("button");
-closeButton.classList.add('no');
+closeButton.classList.add('noBtn');
 closeButton.innerHTML = '<i class="fas fa-times"></i>';
 closeButton.style.position = "relative";
 closeButton.style.left = 35 + "%";
@@ -129,15 +129,15 @@ if (e.target.closest('span').classList.contains('new')) {
 e.target.closest('span').classList.toggle('movs');
 openTaskPopup(e);
 
-} else if (e.target.closest('button').classList.contains('no')) {
-e.target.closest('button').classList.toggle('movs');
+} else if (e.target.closest('button').classList.contains('noBtn')) {
+e.target.closest('button').classList.toggle('movsss');
 esRemove(e);
 
-} else if (e.target.closest('button').className === 'yes') {
-e.target.closest('button').classList.toggle('movs');
+} else if (e.target.closest('button').className === 'yesBtn') {
+e.target.closest('button').classList.toggle('movss');
  timesCheck(e);
 
-} else if (e.target.closest('button').className === 'pick'){
+} else if (e.target.closest('button').className === 'pickBtn'){
 e.target.closest('button').classList.toggle('picker');
 pickThem(e);
 }

@@ -272,3 +272,47 @@ color: red;
     background-color: green;
     color: white;
 }
+.yesBtn{
+    border: 2px solid blue;
+    height: 50px;
+    width: 50px;
+    font-size: 40px;
+    cursor: pointer;
+    margin-top: 50px;
+    position: relative;
+    background: rgba(0,0,0,0.0);
+}
+.noBtn{
+    border: 2px solid rgb(0, 17, 255);
+    height: 50px;
+    width: 50px;
+    font-size: 40px;
+    cursor: pointer;
+    position: relative;
+    background: rgba(0,0,0,0.0);
+}
+.noBtn:hover{
+    color: rgb(255, 230, 0);
+    background-color: lightgreen;
+}
+.yesBtn:hover{
+    color: rgb(255, 230, 0);
+    background-color: lightgreen;
+}
+
+.pickBtn{
+    position: relative;
+    border: 2px solid black;
+    width: 50px;
+    border-radius: 5px;
+    background-color: rgb(17, 0, 255);
+    cursor: pointer;
+}
+.movss{
+    color: rgb(255, 230, 0);
+    background-color: lightgreen;
+}
+.movsss{
+    color: rgb(255, 230, 0);
+    background-color: lightgreen;
+}
